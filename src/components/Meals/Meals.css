@@ -1,0 +1,19 @@
+.meals-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.meal-container {
+    margin-right: 5px;
+    margin-left: 15px;
+    padding-top: 30px;
+    border-right: 1px solid #c777b9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80vw;
+}
+
+.detail-container {
+    padding-top: 30px;
+}

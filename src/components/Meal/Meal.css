@@ -1,0 +1,9 @@
+.meal {
+    margin: 10px 15px;
+    width: 350px;
+}
+
+.meal-image {
+    width: 100%;
+    border-radius: 5px;
+}
