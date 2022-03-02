@@ -1,0 +1,9 @@
+.store {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+}
+
+.store ol {
+    margin-left: 15px;
+}

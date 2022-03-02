@@ -1,14 +1,22 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import './Meal.css';
 
-const Meal = ({meal}) => {
-    console.log(meal);
+const Meal = ({meal, handleMealName}) => {
     return (
         <div className="meal">
-            <img className="meal-image" src={meal.strMealThumb} alt="" />
             <div>
-                <h4>{meal.strMeal}</h4>
-                <p>{meal.strInstructions.split(" ").slice(0, 50).join(" ")}</p>
+                <img className="meal-image" src={meal.strMealThumb} alt="" />
+            </div>
+
+            <div className="meal-text">
+                <h3>{meal.strMeal}</h3>
+                <p>{meal.strInstructions.split(" ").slice(0, 45).join(" ")}</p>
+                <button
+                 className="add-btn"
+                 onClick={ () => handleMealName(meal)}
+                ><FontAwesomeIcon icon={faPlus} /> Add</button>
             </div>
         </div>
     );

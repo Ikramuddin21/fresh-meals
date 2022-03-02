@@ -1,9 +1,48 @@
 .meal {
-    margin: 10px 15px;
     width: 350px;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    transition: all 0.6s;
+}
+
+.meal:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transform: translateY(-3px);
 }
 
 .meal-image {
     width: 100%;
     border-radius: 5px;
+}
+
+.meal-text {
+    margin-top: 10px;
+}
+
+.meal-text h3 {
+    margin-bottom: 10px;
+}
+
+.meal-text p {
+    font-size: 15px;
+}
+
+.add-btn {
+    width: 130px;
+    height: 35px;
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #79b3f4;
+    border: 1px solid #c777b9;
+    border-radius: 5px;
+    transition: all 0.6s;
+}
+
+.add-btn:hover {
+    background-color: #c777b9;
+    border: 1px solid #79b3f4;
 }

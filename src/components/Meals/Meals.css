@@ -5,15 +5,15 @@
 
 .meal-container {
     margin-right: 5px;
-    margin-left: 15px;
     padding-top: 30px;
     border-right: 1px solid #c777b9;
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 80vw;
 }
 
-.detail-container {
+.store-container {
+    margin-left: 30px;
     padding-top: 30px;
 }
