@@ -4,7 +4,7 @@
     padding: 10px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-    transition: all 0.6s;
+    transition: all 0.5s;
 }
 
 .meal:hover {
@@ -32,17 +32,18 @@
 .add-btn {
     width: 130px;
     height: 35px;
-    margin: 5px 0;
+    margin: 10px 0;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    background-color: #79b3f4;
-    border: 1px solid #c777b9;
+    color: white;
+    background-color: #d16ba5;
+    border: 1px solid #79b3f4;
     border-radius: 5px;
-    transition: all 0.6s;
+    transition: all 0.4s;
 }
 
 .add-btn:hover {
-    background-color: #c777b9;
-    border: 1px solid #79b3f4;
+    background-color: #79b3f4;
+    border: 1px solid #d16ba5;
 }
