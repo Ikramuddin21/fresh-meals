@@ -1,9 +1,31 @@
 .store {
-    position: -webkit-sticky;
     position: sticky;
     top: 20px;
 }
 
-.store ol {
-    margin-left: 15px;
+.store h3 {
+    text-align: center;
+}
+
+.display-store-meal {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-right: 10px;
+    background-color: #d16ba5;
+    border-radius: 5px;
+}
+
+.display-store-meal img {
+    width: 100px;
+    height: 80px;
+    margin-right: 7px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.quantity {
+    margin-left: 5px;
+    color: #46eefa;
+    font-weight: 700;
 }

@@ -1,17 +1,22 @@
-let storedName = {};
-const addToDb = name => {
-    const exists = getDb();
-    if(!exists) {
-        storedName.mealName = name;
-    }
-    else {
-        storedName = JSON.parse(exists);
-    }
-    updateDb(storedName);
+const addToDb = id => {
+        const savedDb = getDb();
+        if(savedDb[id]) {
+                savedDb[id] = savedDb[id] + 1;
+        }
+        else {
+                savedDb[id] = 1;
+        }
+        updateDb(savedDb);
 };
 
-const getDb = () => localStorage.getItem("mealsName");
+const updateDb = id => {
+        const idJSON = JSON.stringify(id);
+        localStorage.setItem("mealsId", idJSON);
+};
 
-const updateDb = name => localStorage.setItem("mealsName", JSON.stringify(name));
+const getDb = () => {
+        let savedDb = localStorage.getItem("mealsId");
+        return savedDb ? JSON.parse(savedDb) : {};
+};
 
-export { addToDb }
+export { addToDb, getDb };
