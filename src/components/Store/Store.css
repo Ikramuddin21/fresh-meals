@@ -1,6 +1,6 @@
 .store {
     position: sticky;
-    top: 20px;
+    top: 10px;
 }
 
 .store h3 {
@@ -25,7 +25,13 @@
 }
 
 .quantity {
-    margin-left: 5px;
+    margin-left: 8px;
+    margin-right: 10px;
     color: #46eefa;
     font-weight: 700;
+}
+
+.delete-icon {
+    font-size: 20px;
+    cursor: pointer;
 }

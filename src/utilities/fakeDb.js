@@ -1,5 +1,6 @@
+// save to local storage
 const addToDb = id => {
-        const savedDb = getDb();
+        const savedDb = getToDb();
         if(savedDb[id]) {
                 savedDb[id] = savedDb[id] + 1;
         }
@@ -9,14 +10,30 @@ const addToDb = id => {
         updateDb(savedDb);
 };
 
+// update local storage
 const updateDb = id => {
         const idJSON = JSON.stringify(id);
         localStorage.setItem("mealsId", idJSON);
 };
 
-const getDb = () => {
+// get to local storage
+const getToDb = () => {
         let savedDb = localStorage.getItem("mealsId");
         return savedDb ? JSON.parse(savedDb) : {};
 };
 
-export { addToDb, getDb };
+// remove to local storage
+const removeToDb = id => {
+        const savedDb = getToDb();
+        delete savedDb[id];
+        updateDb(savedDb);
+};
+
+// clear all 
+const clearAll = () => {
+        localStorage.clear();
+};
+
+
+
+export { addToDb, getToDb, removeToDb, clearAll };
